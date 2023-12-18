@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop Hero</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- daisyUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.4.20/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="max-w-screen-2xl mx-auto bg-white">
+    <nav class="bg-[#1A187A] py-5 text-white">
+      <div
+        class="flex justify-between px-5 md:0 md:justify-around items-center"
+      >
+        <!-- start -->
+        <div>
+          <img class="w-28 md:w-36" src="Group 2.png" alt="" />
+        </div>
+        <div class="md:hidden ">
+          
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h8m-8 6h16"
+            />
+          </svg>
+        </div>
+
+        <!-- middle -->
+        <div class="relative hidden md:block text-center">
+          <span
+            class="fa-solid fa-magnifying-glass absolute left-2 bottom-2 text-black"
+          ></span>
+          <input
+            class="md:h-8 w-72 rounded-xl px-8"
+            placeholder="Search"
+            type="search"
+          />
+        </div>
+        <!-- End -->
+        <div class="hidden md:block">
+          <ul class="flex justify-around gap-10">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Contact Us</a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-user"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- banner section -->
+    <section
+      style="
+        background-image: url('banner.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      "
+    >
+      <div
+        class="carousel w-full h-[300px] md:h-[600px] overflow-y-hidden text-black"
+      >
+        <div id="slide1" class="carousel-item relative w-full">
+          <div class="md:flex md:pl-52">
+            <div
+              class="md:space-y-2 pl-10 pt-5 flex items-center justify-center"
+            >
+              <div class="space-y-3">
+                <p>Pro.Beyond.</p>
+                <h1 class="md:text-5xl lg:text-8xl font-semibold text-[#000]">
+                  IPhone 14 Pro
+                </h1>
+                <p class="text-xs md:text-base">
+                  Created to change everything for the better. For everyone
+                </p>
+                <button
+                  class="hidden md:block btn btn-sm md:btn-md bg-[#171495]"
+                >
+                  Shop Now
+                </button>
+              </div>
+            </div>
+            <div class="lg:pl-52 pl-10 mt-10">
+              <img
+                src="Iphone Image.png"
+                class="w-1/2 md:w-full"
+              />
+            </div>
+          </div>
+
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a
+              href="#slide2"
+              class="btn btn-outline border-0 text-2xl text-black"
+              >❮</a
+            >
+            <a
+              href="#slide2"
+              class="btn btn-outline border-0 text-2xl text-black"
+              >❯</a
+            >
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <div class="md:flex md:pl-52">
+            <div
+              class="md:space-y-2 pl-10 pt-5 flex items-center justify-center"
+            >
+              <div>
+                <p>Pro.Beyond.</p>
+                <h1 class="md:text-5xl lg:text-8xl font-semibold text-[#000]">
+                  IPhone 14 Pro
+                </h1>
+                <p class="text-xs md:text-base">
+                  Created to change everything for the better. For everyone
+                </p>
+                <button class="hidden md:block btn btn-sm bg-[#171495]">
+                  Shop Now
+                </button>
+              </div>
+            </div>
+            <div class="lg:pl-52 pl-10 mt-10">
+              <img
+                src="Iphone Image.png"
+                class="w-1/2 md:w-full"
+              />
+            </div>
+          </div>
+
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a
+              href="#slide1"
+              class="btn btn-outline border-0 text-2xl text-black"
+              >❮</a
+            >
+            <a
+              href="#slide1"
+              class="btn btn-outline border-0 text-2xl text-black"
+              >❯</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- After Banner -->
+    <section class="text-black h-[600px] mb-56 md:mb-0">
+      <!-- top -->
+      <div class="flex flex-col md:flex-row relative">
+        <!-- left side -->
+        <div class="md:w-1/2">
+          <div class="flex h-50 md:h-80 items-center justify-center">
+            <div class="h-full w-1/2">
+              <img class="h-[100%]" src="PlayStation.png" alt="" />
+            </div>
+            <div class="w-1/2 lg:pr-11 text-sm">
+              <h1 class="text-3xl">iPad 9</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud.
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-5 items-center bg-[#9cb6d0] h-52 md:h-72">
+            <div class="md:w-2/3 w-1/2 h-52 md:h-72">
+              <img class="h-full" src="headphoneBg.png" alt="" />
+            </div>
+            <div class="md:w-1/3 w-1/2 lg:px-12 text-sm">
+              <h1 class="text-3xl">
+                Apple <br />AirPods <br />
+                <span class="font-bold"> Max</span>
+              </h1>
+              <p class="text-white">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- right side -->
+        <div
+          class="md:w-1/2 flex flex-col gap-5 md:flex-row items-center justify-center bg-[#EDEDED] px-10 md:px-0"
+        >
+          <div class="md:pl-10 md:w-1/2 text-sm md:text-base">
+            <h1 class="text-4xl">
+              Macbook <br /><span class="font-bold">Air</span>
+            </h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad
+            </p>
+            <button class="btn btn-sm btn-md bg-[#27448E]">Shop Now</button>
+          </div>
+          <div class="md:h-[300px]">
+            <img class="h-full" src="Group 6.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <!-- bottom -->
+    </section>
+    <!-- Category section -->
+    <section class="my-10 max-w-7xl mx-auto px-2">
+      <div class="flex flex-col">
+        <div>
+          <h3 class="mb-10 text-black font-semibold text-xl">
+            Browse By Category
+          </h3>
+        </div>
+        <div
+          class="flex flex-col md:flex-row justify-around items-center gap-10 md:gap-20"
+        >
+          <div
+            class="flex flex-col justify-center items-center border-2 w-[160px] h-[128px] bg-[#EDEDED] rounded-md"
+          >
+            <img src="icons8-smartphone-50.png" class="w-10 mx-auto" alt="" />
+            <p class="text-black text-lg">Phones</p>
+          </div>
+          <div
+            class="flex flex-col justify-center items-center border-2 w-[160px] h-[128px] bg-[#EDEDED] rounded-md"
+          >
+            <img src="icons8-smart-watch-50.png" class="w-10 mx-auto" alt="" />
+            <p class="text-black text-lg">Smart Watches</p>
+          </div>
+          <div
+            class="flex flex-col justify-center items-center border-2 w-[160px] h-[128px] bg-[#EDEDED] rounded-md"
+          >
+            <img src="icons8-camera-50.png" class="w-10 mx-auto" alt="" />
+            <p class="text-black text-lg">Camera</p>
+          </div>
+          <div
+            class="flex flex-col justify-center items-center border-2 w-[160px] h-[128px] bg-[#EDEDED] rounded-md"
+          >
+            <img src="icons8-computer-50.png" class="w-10 mx-auto" alt="" />
+            <p class="text-black text-lg">Computer</p>
+          </div>
+          <div
+            class="flex flex-col justify-center items-center border-2 w-[160px] h-[128px] bg-[#EDEDED] rounded-md"
+          >
+            <img src="icons8-headphone-48.png" class="w-10 mx-auto" alt="" />
+            <p class="text-black text-lg">Headphones</p>
+          </div>
+          <div
+            class="flex flex-col justify-center items-center border-2 w-[160px] h-[128px] bg-[#EDEDED] rounded-md"
+          >
+            <img
+              src="icons8-gaming-console-64.png"
+              class="w-10 mx-auto"
+              alt=""
+            />
+            <p class="text-black text-lg">Gaming</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- new arrival section -->
+    <section class="max-w-7xl mx-auto my-10 px-2">
+      <div class="flex gap-2 mb-5">
+        <h4 class="text-black border-b-2 border-black">New Arrival</h4>
+        <h4>Bestseller</h4>
+        <h4>Featured Products</h4>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-5">
+        <div
+          class="relative flex flex-col justify-center items-center space-y-3 pt-5 border-2 px-5 py-4 shadow-2xl rounded-lg bg-[#f6f6f6]"
+        >
+          <div class="absolute top-2 right-2">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="w-full">
+            <img class="w-[100%]" src="Iphone 14 pro 1-2.png" alt="" />
+          </div>
+          <p class="text-black text-center">
+            Apple iPhone 14 Pro Max<br />128GB Deep Purple <br />(MQ9T3RX/A)
+          </p>
+          <p class="font-semibold text-black"><b>$900</b></p>
+          <button class="btn btn-sm btn-md bg-[#0c0c0c]">Buy Now</button>
+        </div>
+        <div
+          class="relative flex flex-col justify-center items-center space-y-3 pt-5 border-2 px-5 py-4 shadow-2xl rounded-lg bg-[#f6f6f6]"
+        >
+          <div class="absolute top-2 right-2">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="w-full">
+            <img class="w-[100%]" src="Iphone 14 pro 1-3.png" alt="" />
+          </div>
+          <p class="text-black text-center">
+            Blackmagic Pocket Cinema<br />Camera 6k<br />
+          </p>
+          <p class="font-semibold text-black"><b>$2535</b></p>
+          <button class="btn btn-sm btn-md bg-[#0c0c0c]">Buy Now</button>
+        </div>
+        <div
+          class="relative flex flex-col justify-center items-center space-y-3 pt-5 border-2 px-5 py-4 shadow-2xl rounded-lg bg-[#f6f6f6]"
+        >
+          <div class="absolute top-2 right-2">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="w-full">
+            <img class="w-[100%]" src="Iphone 14 pro 1-1.png" alt="" />
+          </div>
+          <p class="text-black text-center">
+            Apple Watch Series 9 GPS<br />41mm Starlight Aluminium <br />Case
+          </p>
+          <p class="font-semibold text-black"><b>$399</b></p>
+          <button class="btn btn-sm btn-md bg-[#0c0c0c]">Buy Now</button>
+        </div>
+        <div
+          class="relative flex flex-col justify-center items-center space-y-3 pt-5 border-2 px-5 py-4 shadow-2xl rounded-lg bg-[#f6f6f6]"
+        >
+          <div class="absolute top-2 right-2">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="w-full">
+            <img class="w-[100%]" src="Iphone 14 pro 1.png" alt="" />
+          </div>
+          <p class="text-black text-center">AirPods Max Silver<br /></p>
+          <p class="font-semibold text-black"><b>$549</b></p>
+          <button class="btn btn-sm btn-md bg-[#0c0c0c]">Buy Now</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- upper footersection -->
+    <section>
+      <div
+        class="flex flex-col md:flex-row py-7 bg-[#958AD4] justify-between items-center"
+      >
+        <div class="w-full md:w-[421px]">
+          <img class="" src="image 19 (1).png" alt="" />
+        </div>
+        <div class="h-full md:w-1/2 space-y-2">
+          <h1
+            class="text-6xl md:text-8xl font-semibold text-[#25177B] text-center"
+          >
+            11.11 <span class="text-white text-">Sale</span>
+          </h1>
+          <p class="text-center text-white">
+            Lorem ipsum dolor sit amet consectetur <br />
+            adipisicing elit. Fuga, esse. dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud.
+          </p>
+        </div>
+        <div>
+          <img src="jbl_jr_310bt_blue 1.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- footer section -->
+    <footer class="bg-[#0E071B] p-10">
+      <div class="flex flex-col md:flex-row justify-around max-w-7xl mx-auto">
+        <div
+          class=" flex flex-col md:flex-row items-center md:items-start gap-10"
+        >
+          <div>
+            <img class="w-28 md:w-36" src="Group 2.png" alt="" />
+          </div>
+          <div class="hidden md:block">
+            <ul class="flex gap-10">
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="  flex flex-col md:flex-row items-center md:items-start md:gap-20 gap-10 mt-10 md:mt-0"
+        >
+          
+            <ul class="text-center md:text-start">
+              <li>
+                <a href="#"><i>Services</i></a>
+              </li>
+              <li>
+                <a href="#">Bonus program</a>
+              </li>
+              <li>
+                <a href="#">Gift cards</a>
+              </li>
+              <li>
+                <a href="#">Credits and payment</a>
+              </li>
+              <li>
+                <a href="#">Service contracts</a>
+              </li>
+              <li>
+                <a href="#">Non-cash account</a>
+              </li>
+              <li>
+                <a href="#">Payment</a>
+              </li>
+            </ul>
+            
+            <ul class="text-center md:text-start">
+              <li>
+                <a href="#"><i>Assistance to the buyer</i></a>
+              </li>
+              <li>
+                <a href="#">Find an order</a>
+              </li>
+              <li>
+                <a href="#">Terms of delivery</a>
+              </li>
+              <li>
+                <a href="#">Exchange and return of goods</a>
+              </li>
+              <li>
+                <a href="#">Guarantee</a>
+              </li>
+              <li>
+                <a href="#">Frequently asked questions</a>
+              </li>
+              <li>
+                <a href="#">Terms of use of the site</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="md:hidden flex items-center justify-center mt-10">
+            <ul class="flex gap-10">
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
